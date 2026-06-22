@@ -43,12 +43,12 @@
 
 ```c
 /**
- * @brief  将发送请求加入驱动工作队列。
- * @param  self  驱动实例，不能为 NULL。
- * @param  data  待发送缓冲区；函数返回前完成数据复制。
- * @param  len   待发送字节数，最大为 TX_BUF_SIZE。
- * @return 成功返回 ERR_OK；队列已满时返回 ERR_QUEUE_FULL。
- * @note   本函数非阻塞且线程安全；发送结果在工作线程回调中通知。
+ * @brief  将发送请求加入驱动工作队列
+ * @param  self  驱动实例，不能为 NULL
+ * @param  data  待发送缓冲区；函数返回前完成数据复制
+ * @param  len   待发送字节数，最大为 TX_BUF_SIZE
+ * @return 成功返回 ERR_OK；队列已满时返回 ERR_QUEUE_FULL
+ * @note   本函数非阻塞且线程安全；发送结果在工作线程回调中通知
  */
 int Driver_SendAsync(Driver_t *self,
                      const uint8_t *data,
