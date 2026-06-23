@@ -1,4 +1,4 @@
 interface:
   display_name: "嵌入式 C 注释"
-  short_description: "为嵌入式 C 模块、函数和关键逻辑补齐并核对中文注释"
-  default_prompt: "使用 $write-embedded-c-comments 为目标嵌入式 C 模块补齐文件、函数和关键逻辑注释。"
+  short_description: "按兆鸣规范编写、更新并核对安全关键嵌入式 C 代码注释"
+  default_prompt: "使用 $write-embedded-c-comments 为目标嵌入式 C 代码补充准确、简洁的中文注释。"
