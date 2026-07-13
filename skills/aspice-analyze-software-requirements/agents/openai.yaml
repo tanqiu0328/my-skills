@@ -1,7 +1,6 @@
 interface:
-  display_name: "ASPICE 软件需求分析"
-  short_description: "基于项目证据形成清晰、可验证、可追溯的软件需求文档"
-  default_prompt: "使用 $aspice-analyze-software-requirements 分析当前项目的软件需求并更新简洁的需求文档"
+  display_name: "ASPICE 软件需求基线"
+  short_description: "基于项目证据形成简洁、可开发、可追溯的软件需求基线"
+  default_prompt: "使用 $aspice-analyze-software-requirements 从现有 PRD 和项目证据形成简洁的软件需求开发基线"
 policy:
   allow_implicit_invocation: true
-
