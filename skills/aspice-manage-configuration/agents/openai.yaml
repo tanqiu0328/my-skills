@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 配置管理"
+  short_description: "管理配置项、基线、版本规则和可复现构建的完整项目证据"
+  default_prompt: "使用 $aspice-manage-configuration 梳理当前项目配置项和发布基线"
+policy:
+  allow_implicit_invocation: true
+

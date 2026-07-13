@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 问题解决管理"
+  short_description: "让问题从发现、分析、修复、回归验证到关闭形成完整证据闭环"
+  default_prompt: "使用 $aspice-resolve-problems 整理项目问题并更新问题闭环记录"
+policy:
+  allow_implicit_invocation: true
+

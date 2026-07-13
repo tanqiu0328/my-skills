@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 软件集成验证"
+  short_description: "按集成顺序验证软件组件接口和交互，清晰汇总执行结果与问题"
+  default_prompt: "使用 $aspice-verify-software-integration 规划或记录软件集成验证"
+policy:
+  allow_implicit_invocation: true
+

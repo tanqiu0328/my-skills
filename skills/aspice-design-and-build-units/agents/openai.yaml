@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 软件详细设计"
+  short_description: "基于软件架构完成单元详细设计，并连接代码实现与需求追溯证据"
+  default_prompt: "使用 $aspice-design-and-build-units 完成软件单元详细设计并更新对应文档"
+policy:
+  allow_implicit_invocation: true
+

@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 软件验证"
+  short_description: "依据软件需求汇总验证覆盖、执行结果、偏差处置与发布结论"
+  default_prompt: "使用 $aspice-verify-software 根据软件需求完成验证并更新验证文档"
+policy:
+  allow_implicit_invocation: true
+

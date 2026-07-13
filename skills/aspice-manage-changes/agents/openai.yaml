@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 变更请求管理"
+  short_description: "记录变更原因、影响分析、决策、实施和验证的完整证据链路"
+  default_prompt: "使用 $aspice-manage-changes 分析当前变更并更新变更记录"
+policy:
+  allow_implicit_invocation: true
+

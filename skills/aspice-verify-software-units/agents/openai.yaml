@@ -1,0 +1,7 @@
+interface:
+  display_name: "ASPICE 软件单元验证"
+  short_description: "规划并记录静态分析、代码评审和单元测试的完整可追溯证据"
+  default_prompt: "使用 $aspice-verify-software-units 验证软件单元并更新单元验证文档"
+policy:
+  allow_implicit_invocation: true
+
