@@ -1,7 +1,7 @@
 interface:
   display_name: "ASPICE 软件架构设计"
-  short_description: "将软件需求分配到组件和接口，沉淀清晰的软件架构文档"
-  default_prompt: "使用 $aspice-design-software-architecture 基于项目需求设计或更新软件架构"
+  short_description: "基于软件需求生成简洁文档与可编辑的 Draw.io 软件架构图"
+  default_prompt: "使用 $aspice-design-software-architecture 基于项目需求更新软件架构文档和 Draw.io 图"
 policy:
   allow_implicit_invocation: true
 
