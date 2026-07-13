@@ -1,6 +1,6 @@
 # SWE.2 软件架构设计
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 52～53 页
+来源：Automotive SPICE PAM 4.0 中文版，第 52～53 页
 
 ## 目的
 
@@ -21,4 +21,3 @@
 - 中断、抢占、任务、线程和模式切换
 - 复用、平台适用性、自研或外购
 - 原型、仿真或定性分析形成的证据
-

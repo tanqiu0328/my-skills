@@ -7,7 +7,7 @@ description: 软件详细设计与单元构建并维护 SWE.3 证据。用户要
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SWE.3 全部过程成果
 2. 检查软件架构、软件需求、组件接口、编码规则、现有源代码和单元测试
    - 完成标准：每个范围内组件及其实现状态已确认，缺失输入已列入待确认项
@@ -26,4 +26,3 @@ description: 软件详细设计与单元构建并维护 SWE.3 证据。用户要
 7. 创建或更新 `software-detailed-design.md`，执行交付检查并报告路径、实现状态和缺口
    - 正文描述设计意图和约束，使用链接连接代码，避免逐行复述实现
    - 完成标准：契约中的每项交付检查均通过，开发者和验证者可直接使用
-

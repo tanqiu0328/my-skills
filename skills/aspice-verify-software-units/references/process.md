@@ -1,6 +1,6 @@
 # SWE.4 软件单元验证
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 56～58 页
+来源：Automotive SPICE PAM 4.0 中文版，第 56～58 页
 
 ## 目的
 
@@ -24,4 +24,3 @@
 - 执行版本、结果和原始证据
 
 偏离预期的结果连接 SUP.9 问题记录
-

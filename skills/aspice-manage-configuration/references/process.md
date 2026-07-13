@@ -1,6 +1,6 @@
 # SUP.8 配置管理
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 90～92 页
+来源：Automotive SPICE PAM 4.0 中文版，第 90～92 页
 
 ## 目的
 
@@ -24,4 +24,3 @@
 - 基线范围、版本和构建输入
 - 修改历史和配置状态
 - 完整性检查及备份恢复验证
-

@@ -7,7 +7,7 @@ description: 问题解决管理并维护 SUP.9 证据。用户要求登记缺陷
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SUP.9 全部过程成果
 2. 检查问题跟踪系统、日志、测试失败、用户报告、相关代码、变更和历史同类问题
    - 完成标准：问题来源、当前状态和已有证据已确认
@@ -26,4 +26,3 @@ description: 问题解决管理并维护 SUP.9 证据。用户要求登记缺陷
 7. 汇总状态与趋势，创建或更新 `problem-log.md`
    - 首屏保留总体状态；重复问题使用不超过五列的索引表，复杂问题再展开详情
    - 完成标准：所有范围内问题都可从发现追踪到关闭或下一行动，契约检查全部通过
-

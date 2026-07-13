@@ -7,7 +7,7 @@ description: 软件需求分析并维护 SWE.1 证据。用户要求定义、整
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SWE.1 全部过程成果
 2. 检查利益相关方需求、系统需求、系统架构、HSI、现有软件需求、问题与变更记录
    - 优先使用 `rg`、项目构建配置、接口定义和 Git 历史取证
@@ -26,4 +26,3 @@ description: 软件需求分析并维护 SWE.1 证据。用户要求定义、整
    - 完成标准：受影响方能够据此设计、估算和验证软件
 6. 执行交付检查并向用户报告文档路径、关键结论和缺口
    - 完成标准：契约中的每项交付检查均通过
-

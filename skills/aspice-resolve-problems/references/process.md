@@ -1,6 +1,6 @@
 # SUP.9 问题解决管理
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 93～94 页
+来源：Automotive SPICE PAM 4.0 中文版，第 93～94 页
 
 ## 目的
 
@@ -23,4 +23,3 @@
 - 原因分析和行动记录
 - 修复、回归与关闭接受证据
 - 状态统计和趋势
-

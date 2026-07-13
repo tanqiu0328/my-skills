@@ -1,6 +1,6 @@
 # SWE.3 软件详细设计与单元构建
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 54～56 页
+来源：Automotive SPICE PAM 4.0 中文版，第 54～56 页
 
 ## 目的
 
@@ -22,4 +22,3 @@
 - 受影响方可获得设计和实现的证据
 
 软件单元由应用语义决定，不等同于单个源文件或函数
-

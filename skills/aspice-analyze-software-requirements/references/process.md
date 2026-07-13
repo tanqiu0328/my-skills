@@ -1,6 +1,6 @@
 # SWE.1 软件需求分析
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 50～51 页
+来源：Automotive SPICE PAM 4.0 中文版，第 50～51 页
 
 ## 目的
 
@@ -23,4 +23,3 @@
 - 受影响方可获得约定内容的证据
 
 追溯链接只证明关系存在，还要检查上下游含义是否一致
-

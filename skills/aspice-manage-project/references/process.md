@@ -1,6 +1,6 @@
 # MAN.3 项目管理
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 100～102 页
+来源：Automotive SPICE PAM 4.0 中文版，第 100～102 页
 
 ## 目的
 
@@ -23,4 +23,3 @@
 - 可行性分析、工作包、估算、资源和进度
 - 参与方、接口、承诺及升级路径
 - 项目状态、偏差、问题、变更和纠正措施
-

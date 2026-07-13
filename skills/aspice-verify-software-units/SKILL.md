@@ -7,7 +7,7 @@ description: 软件单元验证并维护 SWE.4 证据。用户要求规划或汇
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SWE.4 全部过程成果
 2. 检查详细设计、软件单元、编码规则、测试代码、静态分析配置、CI 结果和既有异常
    - 完成标准：每个范围内单元的设计、实现和已有验证证据均已定位
@@ -26,4 +26,3 @@ description: 软件单元验证并维护 SWE.4 证据。用户要求规划或汇
    - 完成标准：可以从单元找到结果，也可以从失败结果定位单元和措施
 7. 创建或更新 `unit-verification.md`，执行交付检查并报告路径、覆盖结论和阻塞项
    - 完成标准：契约中的每项交付检查均通过
-

@@ -1,6 +1,6 @@
 # SUP.10 变更请求管理
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 95～96 页
+来源：Automotive SPICE PAM 4.0 中文版，第 95～96 页
 
 ## 目的
 
@@ -21,4 +21,3 @@
 - 影响分析、优先级及批准记录
 - 需求、设计、代码、测试、配置和问题的追溯
 - 实施、验证、确认与关闭状态
-

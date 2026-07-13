@@ -7,7 +7,7 @@ description: 软件组件验证与集成验证并维护 SWE.5 证据。用户要
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SWE.5 全部过程成果
 2. 检查软件架构、详细设计、组件与接口、单元验证状态、集成配置、测试环境和历史问题
    - 完成标准：待集成要素、前提条件及其验证状态已确认
@@ -26,4 +26,3 @@ description: 软件组件验证与集成验证并维护 SWE.5 证据。用户要
    - 完成标准：可以从接口或组件定位验证结果，也能从结果反查设计依据
 7. 创建或更新 `integration-verification.md`，执行交付检查并报告路径、集成状态和阻塞项
    - 完成标准：契约中的每项交付检查均通过
-

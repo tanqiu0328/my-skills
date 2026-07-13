@@ -1,6 +1,6 @@
 # SWE.5 软件组件验证与集成验证
 
-依据：[Automotive SPICE PAM 4.0 中文版](../../../references/AutomotiveSPICE_PAM_40_Chinese.pdf) 第 58～61 页
+来源：Automotive SPICE PAM 4.0 中文版，第 58～61 页
 
 ## 目的
 
@@ -25,4 +25,3 @@
 - 每个集成步骤的准入、准出和环境
 
 偏离预期的结果连接 SUP.9 问题记录
-

@@ -7,7 +7,7 @@ description: 集成软件对软件需求的验证并维护 SWE.6 证据。用户
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SWE.6 全部过程成果
 2. 检查已约定的软件需求、集成软件基线、验证环境、已有验证措施、结果、问题和变更记录
    - 完成标准：发布范围内的软件需求和待验证软件版本已确定
@@ -24,4 +24,3 @@ description: 集成软件对软件需求的验证并维护 SWE.6 证据。用户
    - 完成标准：每项范围内需求都有明确状态，未通过或未执行项有处置和责任人
 7. 创建或更新 `software-verification.md`，执行交付检查并报告路径、覆盖率、偏差和结论
    - 完成标准：契约中的每项交付检查均通过，受影响方可据此作出发布判断
-

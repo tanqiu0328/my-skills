@@ -7,7 +7,7 @@ description: 软件架构设计并维护 SWE.2 证据及 Draw.io 架构图。用
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md)、[Draw.io 规则](references/drawio.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md)、[Draw.io 规则](references/drawio.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则、Draw.io 交付规则和 SWE.2 全部过程成果
 2. 检查已约定的软件需求、系统架构、HSI、现有组件、平台约束和历史架构决策
    - 完成标准：每项架构输入已有证据，缺失或未约定输入已列入待确认项

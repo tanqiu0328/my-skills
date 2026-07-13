@@ -7,7 +7,7 @@ description: 项目管理并维护 MAN.3 证据。用户要求定义项目范围
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 MAN.3 全部过程成果
 2. 检查项目目标、合同或需求、仓库状态、团队、工具、依赖、历史估算、问题、变更和风险
    - 完成标准：计划输入已有证据，关键未知项已列入待确认项
@@ -27,4 +27,3 @@ description: 项目管理并维护 MAN.3 证据。用户要求定义项目范围
    - 完成标准：每个进行中的工作包有最新状态，偏差有处置和责任人
 7. 创建或更新 `project-management.md`，执行交付检查并报告路径、结论、偏差和下一里程碑
    - 完成标准：契约中的每项交付检查均通过，首屏可支持项目决策
-

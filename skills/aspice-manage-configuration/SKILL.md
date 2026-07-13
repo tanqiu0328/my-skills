@@ -7,7 +7,7 @@ description: 配置管理并维护 SUP.8 证据。用户要求识别配置项、
 
 ## 执行步骤
 
-1. 完整读取 [ASPICE 文档契约](../../references/aspice-document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
+1. 完整读取 [ASPICE 文档契约](references/document-contract.md)、[过程参考](references/process.md) 和 [文档模板](assets/template.md)
    - 完成标准：已明确输出位置、证据规则和 SUP.8 全部过程成果
 2. 检查仓库、构建系统、依赖锁定、制品存储、CI、发布流程、访问控制和备份机制
    - 完成标准：所有可能影响产品重现和发布的存储位置及工具已检查
@@ -25,4 +25,3 @@ description: 配置管理并维护 SUP.8 证据。用户要求识别配置项、
    - 完成标准：配置状态可汇报，备份位置、恢复步骤和最近验证结果明确
 7. 创建或更新 `configuration-management.md`，执行交付检查并报告路径、基线状态和缺口
    - 完成标准：契约中的每项交付检查均通过
-
