@@ -5,30 +5,20 @@
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="static-title" value="软件静态架构" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="30" width="260" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="external-system" value="外部系统" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="60" y="180" width="160" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="component-a" value="组件 A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="330" y="120" width="180" height="80" as="geometry"/>
-        </mxCell>
-        <mxCell id="component-b" value="组件 B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="330" y="280" width="180" height="80" as="geometry"/>
-        </mxCell>
-        <mxCell id="platform" value="硬件或平台" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="650" y="200" width="180" height="80" as="geometry"/>
-        </mxCell>
-        <mxCell id="static-edge-1" value="输入" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="external-system" target="component-a">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="static-edge-2" value="接口" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="component-a" target="component-b">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="static-edge-3" value="服务" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="component-b" target="platform">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
+        <mxCell id="static-title" value="软件架构 — 组件视图" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="25" width="360" height="40" as="geometry"/></mxCell>
+        <mxCell id="deployment-boundary" value="部署节点" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;strokeColor=#666666;fillColor=#ffffff;fillOpacity=20;verticalAlign=top;align=left;spacingTop=10;spacingLeft=12;fontStyle=1;container=1;pointerEvents=0;" vertex="1" parent="1"><mxGeometry x="180" y="80" width="780" height="650" as="geometry"/></mxCell>
+        <mxCell id="software-boundary" value="应用软件边界" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 6;strokeColor=#6c8ebf;fillColor=#dae8fc;fillOpacity=12;verticalAlign=top;align=left;spacingTop=10;spacingLeft=12;fontStyle=1;container=1;pointerEvents=0;" vertex="1" parent="1"><mxGeometry x="240" y="130" width="650" height="430" as="geometry"/></mxCell>
+        <mxCell id="external-system" value="外部系统" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="20" y="250" width="130" height="80" as="geometry"/></mxCell>
+        <mxCell id="component-a" value="ARCH-CMP-001&#xa;组件 A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="220" width="180" height="80" as="geometry"/></mxCell>
+        <mxCell id="component-b" value="ARCH-CMP-002&#xa;组件 B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="620" y="220" width="180" height="80" as="geometry"/></mxCell>
+        <mxCell id="board-adapter" value="ARCH-CMP-003&#xa;硬件适配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="460" y="410" width="180" height="80" as="geometry"/></mxCell>
+        <mxCell id="external-hardware" value="目标硬件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="990" y="410" width="140" height="90" as="geometry"/></mxCell>
+        <mxCell id="platform" value="硬件或平台服务" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="430" y="620" width="250" height="70" as="geometry"/></mxCell>
+        <mxCell id="static-edge-1" value="命令 / 输入" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="external-system" target="component-a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="static-edge-2" value="逻辑接口" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="component-a" target="component-b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="static-edge-3" value="硬件命令" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="component-b" target="board-adapter"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="static-edge-4" value="输入 / 输出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="board-adapter" target="external-hardware"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="static-edge-5" value="平台 API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="board-adapter" target="platform"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -37,30 +27,28 @@
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="dynamic-title" value="软件动态架构" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="30" width="260" height="40" as="geometry"/>
-        </mxCell>
-        <mxCell id="trigger" value="触发事件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="60" y="200" width="150" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="dynamic-component-a" value="组件 A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="300" y="200" width="170" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="dynamic-component-b" value="组件 B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="560" y="200" width="170" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="output" value="输出或执行器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="820" y="200" width="170" height="70" as="geometry"/>
-        </mxCell>
-        <mxCell id="dynamic-edge-1" value="1 触发" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="trigger" target="dynamic-component-a">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="dynamic-edge-2" value="2 处理" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="dynamic-component-a" target="dynamic-component-b">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="dynamic-edge-3" value="3 输出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="dynamic-component-b" target="output">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
+        <mxCell id="dynamic-title" value="软件架构 — 运行时与部署视图" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="25" width="430" height="40" as="geometry"/></mxCell>
+        <mxCell id="runtime-deployment" value="部署节点" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;strokeColor=#666666;fillColor=#ffffff;fillOpacity=20;verticalAlign=top;align=left;spacingTop=10;spacingLeft=12;fontStyle=1;container=1;pointerEvents=0;" vertex="1" parent="1"><mxGeometry x="50" y="80" width="930" height="660" as="geometry"/></mxCell>
+        <mxCell id="sdk-context" value="SDK / 网络任务上下文" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingTop=10;spacingLeft=12;fontStyle=1;container=1;pointerEvents=0;" vertex="1" parent="1"><mxGeometry x="90" y="140" width="240" height="160" as="geometry"/></mxCell>
+        <mxCell id="sdk-adapter" value="ARCH-CMP-001&#xa;外部服务适配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120" y="195" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="command-queue" value="命令队列&#xa;容量待验证" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="380" y="175" width="150" height="70" as="geometry"/></mxCell>
+        <mxCell id="latest-snapshot" value="最新状态快照&#xa;覆盖旧值" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="380" y="330" width="150" height="70" as="geometry"/></mxCell>
+        <mxCell id="app-task" value="应用任务上下文 — 单写者 / 顺序执行" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 6;strokeColor=#6c8ebf;fillColor=#dae8fc;fillOpacity=12;verticalAlign=top;align=left;spacingTop=10;spacingLeft=12;fontStyle=1;container=1;pointerEvents=0;" vertex="1" parent="1"><mxGeometry x="580" y="130" width="340" height="330" as="geometry"/></mxCell>
+        <mxCell id="runtime-component-a" value="ARCH-CMP-002&#xa;组件 A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="620" y="200" width="130" height="70" as="geometry"/></mxCell>
+        <mxCell id="runtime-component-b" value="ARCH-CMP-003&#xa;组件 B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="780" y="200" width="110" height="70" as="geometry"/></mxCell>
+        <mxCell id="runtime-board" value="硬件适配&#xa;同步访问" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="650" y="520" width="190" height="75" as="geometry"/></mxCell>
+        <mxCell id="runtime-clock" value="单调时钟&#xa;周期唤醒 / 截止时间" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="90" y="380" width="240" height="80" as="geometry"/></mxCell>
+        <mxCell id="runtime-hardware" value="目标硬件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="1010" y="510" width="130" height="90" as="geometry"/></mxCell>
+        <mxCell id="runtime-platform" value="RTOS / SDK / 硬件平台&#xa;资源与容量待测量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="550" y="650" width="330" height="65" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-1" value="回调只投递" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="sdk-adapter" target="command-queue"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-2" value="异步命令" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="command-queue" target="runtime-component-b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-3" value="顺序调用" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="runtime-component-a" target="runtime-component-b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-4" value="覆盖旧值" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="runtime-component-b" target="latest-snapshot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-5" value="非阻塞读取" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="latest-snapshot" target="sdk-adapter"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-6" value="唤醒 / 截止时间" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="runtime-clock" target="runtime-component-a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-7" value="同步硬件命令" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="runtime-component-b" target="runtime-board"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-8" value="输入 / 输出" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="runtime-board" target="runtime-hardware"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dynamic-edge-9" value="平台 API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="runtime-board" target="runtime-platform"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>

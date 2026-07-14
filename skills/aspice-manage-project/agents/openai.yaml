@@ -1,7 +1,6 @@
 interface:
   display_name: "ASPICE 项目管理"
-  short_description: "用一页摘要和必要明细管理项目范围、里程碑、风险与进度状态"
-  default_prompt: "使用 $aspice-manage-project 基于仓库现状建立或更新项目管理文档"
+  short_description: "用十秒进度摘要和后置证据管理小型项目的下一步与协作门槛"
+  default_prompt: "使用 $aspice-manage-project 基于仓库现状更新工程推进计划和 MAN.3 证据"
 policy:
   allow_implicit_invocation: true
-
