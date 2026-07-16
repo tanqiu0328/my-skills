@@ -1,86 +1,73 @@
 ---
 name: create-prd
-description: "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD."
+description: 创建或评审产品需求文档。用户需要明确产品问题、目标用户、价值、范围、成功指标、方案边界、假设或发布计划时使用；软件可开发需求基线交给 SWE.1
 ---
 
-# Create a Product Requirements Document
+# 创建产品需求文档
 
-## Purpose
+用 PRD 定义产品的 why/what，把实现级软件需求留给 `$aspice-analyze-software-requirements`
 
-You are an experienced product manager responsible for creating a comprehensive Product Requirements Document (PRD) for $ARGUMENTS. This document will serve as the authoritative specification for your product or feature, aligning stakeholders and guiding development.
+## 1. 建立输入边界
 
-## Context
+读取用户材料、已有 PRD、相关决策和项目约定。区分已确认事实、产品决定、待验证假设和实现约束；只有用户要求外部研究或材料指向外部来源时再检索
 
-A well-structured PRD clearly communicates the what, why, and how of your product initiative. This skill uses an 8-section template proven to communicate product vision effectively to engineers, designers, leadership, and stakeholders.
+本步骤完成于目标产品或功能、受众、交付范围、已有证据和关键缺口均已明确
 
-## Instructions
+## 2. 形成产品主张
 
-1. **Gather Information**: If the user provides files, read them carefully. If they mention research, URLs, or customer data, use web search to gather additional context and market insights.
+用简洁语言回答：
 
-2. **Think Step by Step**: Before writing, analyze:
-   - What problem are we solving?
-   - Who are we solving it for?
-   - How will we measure success?
-   - What are our constraints and assumptions?
+- 哪类用户在什么情境下遇到什么问题
+- 为什么现在值得解决
+- 期望改变什么用户结果和业务结果
+- 哪些可量化信号能够证明结果发生
 
-3. **Apply the PRD Template**: Create a document with these 8 sections:
+不要用功能数量代替结果指标。无法证明的市场判断标记为假设
 
-   **1. Summary** (2-3 sentences)
-   - What is this document about?
+本步骤完成于问题、目标用户、价值和成功指标互相一致
 
-   **2. Contacts**
-   - Name, role, and comment for key stakeholders
+## 3. 定义方案与范围
 
-   **3. Background**
-   - Context: What is this initiative about?
-   - Why now? Has something changed?
-   - Is this something that just recently became possible?
+说明核心使用场景、关键能力、明确排除项、约束和替代方案。嵌入式产品按适用范围补充：
 
-   **4. Objective**
-   - What's the objective? Why does it matter?
-   - How will it benefit the company and customers?
-   - How does it align with vision and strategy?
-   - Key Results: How will you measure success? (Use SMART OKR format)
+- 目标硬件、运行环境和外部接口
+- 工作模式、启动、降级、诊断与恢复行为
+- 性能、资源、功耗、安全和法规约束
+- 样板、板级联调、量产或现场验收门槛
 
-   **5. Market Segment(s)**
-   - For whom are we building this?
-   - What constraints exist?
-   - Note: Markets are defined by people's problems/jobs, not demographics
+这里只记录会改变产品范围或验收的技术事实，不展开软件组件、API 或实现细节
 
-   **6. Value Proposition(s)**
-   - What customer jobs/needs are we addressing?
-   - What will customers gain?
-   - Which pains will they avoid?
-   - Which problems do we solve better than competitors?
-   - Consider the Value Curve framework
+本步骤完成于首个发布范围能够被独立验收，排除项和工程门槛没有隐藏
 
-   **7. Solution**
-   - 7.1 UX/Prototypes (wireframes, user flows)
-   - 7.2 Key Features (detailed feature descriptions)
-   - 7.3 Technology (optional, only if relevant)
-   - 7.4 Assumptions (what we believe but haven't proven)
+## 4. 规划发布与验证
 
-   **8. Release**
-   - How long could it take?
-   - What goes in the first version vs. future versions?
-   - Avoid exact dates; use relative timeframes
+按可验证的产品增量说明首版、后续版本、依赖和主要风险。使用相对阶段或区间；没有估算依据时不编造精确日期
 
-4. **Use Accessible Language**: Write for a primary school graduate. Avoid jargon. Use clear, short sentences.
+为每个高风险假设给出最便宜的验证方式和失效判据
 
-5. **Structure Output**: Present the PRD as a well-formatted markdown document with clear headings and sections.
+本步骤完成于首版具有清晰的进入条件、验收条件和延期规则
 
-6. **Save the Output**: If the PRD is substantial (which it will be), save it as a markdown document in the format: `PRD-[product-name].md`
+## 5. 创建或更新 PRD
 
-## Notes
+优先更新项目现有 PRD；没有约定时写入 `docs/product/PRD-<product-name>.md`
 
-- Be specific and data-driven where possible
-- Link each section back to the overall strategy
-- Flag assumptions clearly so the team can validate them
-- Keep the document concise but complete
+正文使用以下结构：
 
----
+1. 摘要
+2. 问题与背景
+3. 用户与使用情境
+4. 目标、非目标与成功指标
+5. 产品方案和关键场景
+6. 约束、假设与风险
+7. 发布范围与验收
+8. 待决策事项
 
-### Further Reading
+删除空章节和占位内容，默认使用简体中文，通过相对链接连接证据
 
-- [How to Write a Product Requirements Document? The Best PRD Template.](https://www.productcompass.pm/p/prd-template)
-- [A Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
+本步骤完成于 PRD 能支持范围决策和 SWE.1 输入，且事实、决定与假设可区分
+
+## 6. 评审交付
+
+报告文档路径、关键产品决定、最高风险假设和下一步。评审已有 PRD 时，优先指出会改变价值、范围、验收或发布判断的缺口
+
+本步骤完成于所有关键缺口均已关闭、明确延期或记录为待决策事项

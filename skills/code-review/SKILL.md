@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to "review since X".
+description: 评审固定点到 HEAD 的代码变化，分别检查项目编码标准和原始 Issue、PRD 或规格符合性。用户要求 review 分支、PR、进行中改动或某个提交后的变化时使用
 ---
 
 Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
@@ -10,7 +10,7 @@ Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
 
 Both axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
 
-The issue tracker should have been provided to you — run `/setup-matt-pocock-skills` if `docs/agents/issue-tracker.md` is missing.
+If `docs/agents/issue-tracker.md` exists, use it to resolve issue references. Otherwise use an available tracker connector or local spec; only ask the user when the spec cannot be recovered from the repository or conversation.
 
 ## Process
 
@@ -26,7 +26,7 @@ Before going further, confirm the fixed point resolves (`git rev-parse <fixed-po
 
 Look for the originating spec, in this order:
 
-1. Issue references in the commit messages (`#123`, `Closes #45`, GitLab `!67`, etc.) — fetch via the workflow in `docs/agents/issue-tracker.md`.
+1. Issue references in the commit messages (`#123`, `Closes #45`, GitLab `!67`, etc.) — resolve them through `docs/agents/issue-tracker.md` or an available tracker connector.
 2. A path the user passed as an argument.
 3. A PRD/spec file under `docs/`, `specs/`, or `.scratch/` matching the branch name or feature.
 4. If nothing is found, ask the user where the spec is. If they say there isn't one, the **Spec** sub-agent will skip and report "no spec available".
@@ -55,9 +55,9 @@ Each smell reads *what it is* → *how to fix*; match it against the diff:
 - **Middle Man** — a class or function that mostly just delegates onward. → cut it, call the real target direct.
 - **Refused Bequest** — a subclass or implementer that ignores or overrides most of what it inherits. → drop the inheritance, use composition.
 
-### 4. Spawn both sub-agents in parallel
+### 4. Run both reviews in isolated contexts
 
-Send a single message with two `Agent` tool calls. Use the `general-purpose` subagent for both.
+When the runtime supports sub-agents, start both reviews in parallel with the smallest task-local context below. Otherwise run them sequentially, clearing the first report from the second review's working context. Isolation is required; a Standards conclusion must not prime the Spec review and vice versa.
 
 **Standards sub-agent prompt** — include:
 

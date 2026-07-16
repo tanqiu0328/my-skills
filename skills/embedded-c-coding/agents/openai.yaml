@@ -1,0 +1,6 @@
+interface:
+  display_name: "嵌入式 C 编码"
+  short_description: "按项目平台约束编写并审查内存、并发和硬件安全的 C 代码"
+  default_prompt: "使用 $embedded-c-coding 实现或审查当前嵌入式 C 代码改动"
+policy:
+  allow_implicit_invocation: true

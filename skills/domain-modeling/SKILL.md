@@ -1,6 +1,6 @@
 ---
 name: domain-modeling
-description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.
+description: 建立和维护项目领域模型。用户需要统一术语、澄清概念边界、记录难以逆转的架构决策，或其他 Skill 需要更新领域语言时使用
 ---
 
 # Domain Modeling

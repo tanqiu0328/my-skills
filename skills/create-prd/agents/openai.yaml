@@ -1,0 +1,6 @@
+interface:
+  display_name: "创建产品需求文档"
+  short_description: "明确产品问题、目标用户、价值、范围、成功指标与发布验收"
+  default_prompt: "使用 $create-prd 基于现有材料创建或评审产品需求文档"
+policy:
+  allow_implicit_invocation: true

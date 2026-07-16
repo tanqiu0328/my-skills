@@ -2,6 +2,14 @@
 
 # SOLID原则与GoF设计模式在C语言中的实现
 
+## 导航
+
+- C 语言中的 SOLID
+- 常用 GoF 模式
+- OOP 高级模式
+- 层级状态机与事件驱动
+- 模式选择指南
+
 C语言没有类、继承和虚方法，但每一条SOLID原则和许多GoF设计模式
 都可以通过结构体、函数指针和不透明类型来实现。本文档将逐一说明。
 
@@ -122,7 +130,7 @@ int save_config(const StorageOps_t *ops, void *ctx,
 不要强迫模块依赖它不使用的接口。
 将臃肿的接口拆分为聚焦的小接口。
 
-完整示例参见 `01_架构设计.md`。核心规则：如果使用者只需要
+完整示例参见 [architecture.md](architecture.md)。核心规则：如果使用者只需要
 读取功能，就只给它只读接口，而非完整的读写擦除接口。
 
 ### D — DIP（依赖倒置原则）
@@ -502,7 +510,7 @@ my_device_t *dev = container_of(
     base_ptr, my_device_t, base);
 ```
 
-详细的 `container_of` 使用方式参见 `01_架构设计.md`。
+详细的 `container_of` 使用方式参见 [architecture.md](architecture.md)。
 
 ---
 

@@ -2,6 +2,13 @@
 
 # 代码风格与格式规范
 
+## 导航
+
+- 行宽、函数长度和嵌套深度
+- 具名常量、注释与死代码
+- `const`、`static` 和头文件
+- 命名、参数与安全编码基本规则
+
 ## 行宽
 
 每行最多80列。超过80列的行必须换行。在逻辑断点处换行：
@@ -98,7 +105,8 @@ static void process_item(Item_t *item)
 
 ## 魔法数字
 
-所有数字字面量（除0、1和明显的布尔类值外）必须定义为宏：
+具有领域含义、单位或调参价值的数字使用具名常量。优先选择类型安全的
+`enum`、`static const` 或项目约定形式；预处理和数组尺寸等场景再使用宏：
 
 ```c
 /* 反面示例 */
@@ -127,7 +135,7 @@ timeout = DEFAULT_TIMEOUT_MS;
 
 ### 语言
 
-推荐使用英文注释，或与项目约定一致。
+默认使用简体中文注释，项目有明确语言规范时保持项目一致。
 
 ### 作者署名
 
@@ -137,7 +145,7 @@ timeout = DEFAULT_TIMEOUT_MS;
 /**
  * @file    uart_driver.c
  * @brief   UART driver with non-blocking async API.
- * @author  兆鸣嵌入式
+ * @author  {使用项目约定；没有约定时省略}
  */
 ```
 
@@ -303,7 +311,7 @@ static const uint16_t CRC_TABLE[CRC_TABLE_SIZE] = {
 ## 函数参数数量
 
 每个函数最多5个参数。需要更多参数时，将相关参数组合成配置
-结构体。详细的模式和示例参见 `03_Clean_Code.md`。
+结构体。详细的模式和示例参见 [clean-code.md](clean-code.md)。
 
 ## 安全编码基本规则
 
@@ -326,17 +334,18 @@ if (error) {
 
 ### 固定宽度整数类型
 
-禁止使用 `int`/`short`/`long`/`unsigned` 等原生类型，
-必须使用 `stdint.h` 的固定宽度类型：
+协议字段、寄存器、持久化格式和需要确定范围的数据使用 `stdint.h` 的
+固定宽度类型。对象大小、索引差值和库接口使用 `size_t`、`ptrdiff_t`
+等语义类型；普通计算类型遵循项目 ABI 和静态分析规则：
 
 ```c
-/* 禁止 */
-int count;
-unsigned char data;
+/* 协议和寄存器边界需要固定宽度 */
+uint32_t frame_counter;
+uint8_t register_value;
 
-/* 必须 */
-int32_t count;
-uint8_t data;
+/* 对象大小使用语义类型 */
+size_t buffer_size;
+ptrdiff_t offset_delta;
 ```
 
 ### 位操作安全

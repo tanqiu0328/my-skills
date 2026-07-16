@@ -1,13 +1,13 @@
 ---
 name: to-tickets
-description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.
+description: 把计划、规格或当前对话拆成 tracer-bullet 票据，声明阻塞关系并发布到本地文件或用户选择的 issue tracker
 ---
 
 # To Tickets
 
 Break a plan, spec, or conversation into a set of **tickets** — tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skills` if not.
+Use the tracker configured in `docs/agents/issue-tracker.md` when present. If no tracker is configured, default to local ticket files; switching to an external tracker requires the user's explicit choice before publishing.
 
 ## Process
 
@@ -27,7 +27,8 @@ Break the work into **tracer bullet** tickets.
 
 <vertical-slice-rules>
 
-- Each slice cuts a narrow but COMPLETE path through every layer (schema, API, UI, tests) — vertical, NOT a horizontal slice of one layer
+- Each slice cuts a narrow but COMPLETE path through the behaviour it changes — vertical, NOT a horizontal slice of one technical layer
+- For embedded work, a slice normally connects the applicable input, driver or platform seam, application behaviour, observable output, and host or target verification
 - A completed slice is demoable or verifiable on its own
 - Each slice is sized to fit in a single fresh context window
 - Any prefactoring should be done first
@@ -56,7 +57,7 @@ Iterate until the user approves the breakdown.
 
 ### 5. Publish the tickets to the configured tracker
 
-Publish the approved tickets. **How** depends on the tracker `/setup-matt-pocock-skills` configured — the tickets are the same either way, only the shape of the blocking edges changes:
+Publish the approved tickets. **How** depends on the selected tracker — the tickets are the same either way, only the shape of the blocking edges changes:
 
 - **Local files** → write one file per ticket under `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` in dependency order (blockers first). Each file's "Blocked by" lists the numbers/titles it depends on. Use the per-ticket file template below — one ticket per file, never a single combined file.
 - **A real issue tracker (GitHub, Linear, …)** → publish one issue per ticket in dependency order (blockers first) so each ticket's blocking edges can reference real identifiers. Use the platform's native blocking / sub-issue relationship where it has one; otherwise set each ticket's "Blocked by" to the blocking issues. Apply the `ready-for-agent` triage label unless instructed otherwise — the tickets are agent-grabbable by construction.
@@ -103,4 +104,4 @@ The end-to-end behaviour this ticket makes work, from the user's perspective —
 
 In either form, avoid specific file paths or code snippets — they go stale fast. Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it and note briefly that it came from a prototype. Trim to the decision-rich parts — not a working demo, just the important bits.
 
-Work the frontier one ticket at a time with `/implement`, clearing context between tickets.
+End by reporting the current frontier: every ticket whose blockers are already complete. Ticket implementation is a separate task and starts in a fresh context.

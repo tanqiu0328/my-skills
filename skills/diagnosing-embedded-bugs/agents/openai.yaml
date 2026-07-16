@@ -1,0 +1,6 @@
+interface:
+  display_name: "嵌入式问题诊断"
+  short_description: "用可重复反馈闭环定位固件故障、竞态、时序与性能问题"
+  default_prompt: "使用 $diagnosing-embedded-bugs 复现并定位当前嵌入式软件问题"
+policy:
+  allow_implicit_invocation: true
