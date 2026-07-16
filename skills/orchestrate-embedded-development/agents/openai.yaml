@@ -1,0 +1,7 @@
+interface:
+  display_name: "嵌入式软件研发总控"
+  short_description: "统筹嵌入式软件需求、架构、编码、验证与发布的跨阶段工作流"
+  default_prompt: "使用 $orchestrate-embedded-development 盘点当前项目并编排完成这个跨阶段嵌入式软件任务"
+
+policy:
+  allow_implicit_invocation: false
