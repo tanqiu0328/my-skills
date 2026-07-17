@@ -1,6 +1,0 @@
-interface:
-  display_name: "双轴代码评审"
-  short_description: "从代码标准与需求实现两个独立轴评审指定范围的代码变化"
-  default_prompt: "使用 $code-review 评审指定固定点到 HEAD 的代码变化"
-policy:
-  allow_implicit_invocation: true
